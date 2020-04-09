@@ -1,0 +1,82 @@
+/* falling mevas*/
+
+border-bottom{
+    content:'';
+    display: block;
+    height: 2px;
+    width:100%;
+    background-color:red;
+    position: absolute;
+    bottom:0;
+    width:0%;
+    transition:all ease-in-out 250ms;
+    text-align:center;
+}
+
+.container{
+    background-color:pink;
+    background-size: cover;
+    width: 100%;
+    height:0%;
+    position:absolute;
+    left:0;
+}
+
+.fallingmevas{
+    text-align:center;
+}
+
+.fallingmevas span{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background: url(img/blue.jpg);
+    margin: -280px 40px 54px -34px;
+
+}
+
+
+
+
+
+lllllllllllllllll
+
+
+
+/* falling mevas*/
+
+border-bottom{
+    content:'';
+    display:block;
+    height:2px;
+    width:100%;
+    background-color:transparent;
+    position:absolute;
+    bottom:0;
+    width:0%;
+    transition:all ease-in-out 250ms;
+    text-align:center;
+}
+
+.meva{
+    background-color:rgb(160, 54, 71);
+    background-size: cover;
+    width: 100%;
+    height:0%;
+    position:absolute;
+    left:0;
+
+}
+
+.fallingmevas{
+    text-align:center;
+}
+
+.fallingmevas span{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background: url(img/blue.jpg);
+    margin: -0px 40px 54px -34px;
+
+}

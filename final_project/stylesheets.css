@@ -1,0 +1,109 @@
+body{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background: rgb(249, 249, 249);
+    font-family: cursive, 'Courier New', Courier, monospace, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+}
+
+header{
+    background: rgb(242, 242, 242);
+    padding:35px;
+}
+
+#moto{
+float: right;
+margin-right:5px;
+}
+
+.logo{
+    float: left;
+}
+
+/*nav*/
+
+nav{
+    text-align:center;
+    background:rgb(233, 233, 233);
+}
+
+nav ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left:75px;
+    padding:23px 23px 23px 23px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: 2px solid black;
+}
+/* all of the underlines */
+
+nav a::before {
+    content:'';
+    display: block;
+    height: 2px;
+    position: absolute;
+}
+.nav_content{
+    outline-offset: 10px;
+    }
+/* home*/
+
+#home{
+    color:blue;
+}
+
+nav #home:hover{
+    color:green;
+    border-bottom:2px solid red;
+}
+
+/* about*/
+
+#about{
+    color:rgb(209, 122, 15);
+}
+
+nav #about:hover{
+    color:rgb(231, 95, 163);
+    border-bottom:2px solid green;
+}
+
+/* shop*/
+
+#shop{
+    color:darkviolet;
+}
+
+nav #shop:hover{
+    color:rgb(197, 9, 81);
+    border-bottom:2px solid rgb(6, 173, 224);
+}
+
+/* contact*/
+
+#contact{
+    color:green;
+}
+
+nav #contact:hover{
+    color:red;
+    border-bottom:2px solid rgb(212, 200, 32);
+}
+
+
+/* falling leaves*/ 
