@@ -1,0 +1,152 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mie-Mie</title>
+    <link href="stylesheets.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header id="mieohmie">
+        mie_oh_mie.com
+    <div id="moto">
+        personalisation with a twist! 
+    </div>
+    </header>
+<div>
+    <nav>
+        <div class="logo">
+        </div>
+
+        <!-- The nav--> 
+        
+    <div class="container">
+        <ul>
+            <li class="active">
+                <a href="index.html" class="nav_content" id="home" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav_content" id="about"  href="pages/about.html">About</a>
+            </li>
+            <li>
+                <a class="nav_content" id="shop" href="pages/shop.html">Shop</a>
+            </li>
+            <li>
+                <a class="nav_content" id="contact" href="pages/contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>    
+    </nav>
+</div>
+
+<!--index.html css-->
+<style>.active{
+    border-bottom:3px solid red;
+    border-top:3px solid red;
+}
+
+#home{
+    color:green;
+    border-bottom:2px solid red;
+}
+
+#home:hover{
+    border-bottom:2px solid  rgb(177, 1, 1) !important;    
+}
+
+
+
+/* rotating robot*/
+
+.robot{
+    position:absolute;
+    left:-345px;
+    top:600px;
+    z-index:-2;
+}
+
+.r{
+    float:left;
+    width:5.26315789%;
+    padding:50px;
+    position:absolute;
+}
+</style>
+
+<!--JavaScript-->
+<div>
+ <canvas id="meva"></canvas>
+ <script src="meva.js"></script>
+
+
+<!--robot-->
+<span class="row">
+ <span id="big_robot" class="col-3">
+     <!--other images of robot-->
+    <img class="robot" alt="big robot" src="images/robot/robot19.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot18.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot17.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot16.png"/>    
+    <img class="robot" alt="big robot" src="images/robot/robot15.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot14.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot13.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot12.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot11.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot10.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot9.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot8.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot7.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot6.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot5.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot4.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot3.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot2.png"/>
+    <img class="robot" alt="big robot" src="images/robot/robot1.png"/>
+ </span>
+</span>
+    <!--transparent layer ontop of robot (going right to left (r1 goes with robot1 - on the right, r2 with robot 2 - on the second most right ect))-->
+<span>
+    <ul id="transparent_layer">
+    <li><img id= left_r class="r" alt="transparent layer" src="images/robot/transparent/r1.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r2.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r3.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r4.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r5.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r6.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r7.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r8.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r9.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r10.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r11.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r12.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r13.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r14.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r15.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r16.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r17.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r18.png"/></li>
+    <li><img class="r" alt="transparent layer" src="images/robot/transparent/r19.png"/></li>
+    </ul>
+</span>
+
+
+
+
+ </div> 
+</div>
+
+
+<!--footer-->
+
+<footer>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>
