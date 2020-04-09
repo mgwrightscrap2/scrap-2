@@ -1,0 +1,56 @@
+Exporter version: 6.3.1, Blender version: 2.82 (sub 7)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Users\mayag\OneDrive\Desktop\Coding\0.    Blender\0. Projects\enter- trials on blender\
+	Python World class constructor completed
+	processing begun of camera (UniversalCamera):  Camera
+	processing begun of mesh:  Cube
+		animation processing begun
+			processing action CubeAction:  in[15 - 15], out[0 - 15]
+		processing begun of material:  Material.001
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  36
+	processing begun of mesh:  Text
+		animation processing begun
+			processing action TextAction:  in[0 - 20], out[0 - 20]
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  1152
+		num normals        :  1152
+		num tangents       :  0
+		num uvs            :  2304
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  3324
+	processing begun of light (POINT):  Light.001
+	processing begun of light (POINT):  Light.003
+	processing begun of light (POINT):  Light.004
+	processing begun of light (POINT):  Light.005
+	processing begun of light (POINT):  Light.006
+	processing begun of light (POINT):  Light.008
+	processing begun of light (POINT):  Light.009
+	processing begun of light (POINT):  Light.010
+	processing begun of light (POINT):  Light.002
+	processing begun of light (POINT):  Light.007
+	processing begun of light (POINT):  Light.011
+	processing begun of light (POINT):  Light.012
+	processing begun of light (POINT):  Light.013
+========= Writing of JSON file started =========
+	writing mesh:  Cube
+	writing mesh:  Text
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 0.3943 secs

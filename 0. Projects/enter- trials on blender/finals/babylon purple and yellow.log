@@ -1,0 +1,47 @@
+Exporter version: 6.3.1, Blender version: 2.82 (sub 7)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Users\mayag\OneDrive\Desktop\Coding\0.    Blender\0. Projects\enter- trials on blender\finals\
+	Python World class constructor completed
+	processing begun of camera (UniversalCamera):  Camera
+	processing begun of mesh:  Text
+		animation processing begun
+			processing action TextAction.002:  in[0 - 40], out[0 - 40]
+		processing begun of material:  Material.001
+		num positions      :  5700
+		num normals        :  5700
+		num tangents       :  0
+		num uvs            :  11400
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  16968
+	processing begun of mesh:  Cube
+		animation processing begun
+			processing action CubeAction:  in[10 - 10], out[0 - 10]
+		processing begun of material:  Material
+		num positions      :  29
+		num normals        :  29
+		num tangents       :  0
+		num uvs            :  58
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  36
+		animation processing begun
+========= An error was encountered =========
+  File "C:\Users\mayag\AppData\Roaming\Blender Foundation\Blender\2.82\scripts\addons\babylon_js\json_exporter.py", line 143, in execute
+    bulb = Light(object, self, self.settings.usePBRMaterials)
+  File "C:\Users\mayag\AppData\Roaming\Blender Foundation\Blender\2.82\scripts\addons\babylon_js\light_shadow.py", line 36, in __init__
+    self.define_animations(bpyLight, False, True, False)
+  File "C:\Users\mayag\AppData\Roaming\Blender Foundation\Blender\2.82\scripts\addons\babylon_js\f_curve_animatable.py", line 53, in define_animations
+    hasData |= posAnimation.append_range(object, animationRange)
+ERROR:  local variable 'hasData' referenced before assignment
+========= end of processing =========
+elapsed time:  0 min, 0.5187 secs
