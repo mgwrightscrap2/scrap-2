@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SS 6 Projects</title>
+</head>
+<body>
+    
+
+
+<script>
+//alerts***********************
+    //var name ="maya";
+    //alert(name)
+
+    //var course = "skillshares";
+    //alert(course)
+
+  //  alert("hi my name is maya");
+
+//concatination*********************
+    var cat1 ="coco"
+
+    var cat2 ="smokey"
+
+    var sentence = "I have a daughter:" + cat1 + " " + "and" + " " + cat2;
+
+//console.log************************
+
+//var name = "maya"
+//var car = "none"
+
+//console.log("name", name, car);
+//console.error("ERROR")
+//console.warn("WARNING STRANGER DANGER");
+</script>
+
+<h1 id="test"> first one</h1>
+<script>
+//modifying html*************************
+//put the html before the javascript
+// h1 is the original innerHTML but can be changed to the test.innerHTML
+ var test = document.getElementById("test");
+var oldText = test.innerHTML
+ test.innerHTML = "welcome <u> to mayayyyyyayayyajava</u> script";
+</script>
+
+
+
+
+
+<h2>
+    My favourite cat is 
+    <span id="catname">coco</span>
+</h2>
+<script>
+    //project one****************************
+//task: create a script to concat a string and a variable together. 2) using inner.HTML and getElementById change the innerHTML of an element to be what your variable is 
+
+//change coco to  another name 
+               // var catname = document.getElementById("catname");
+                //var coco = catname.innerText
+                //coco = coco + " catnis blaque"
+                //catname.innerHTML = coco
+               // console.log(coco)
+                
+
+
+
+//change id to different word
+var catname = document.getElementById("catname");
+var coco = catname.innerText;
+var cats = coco + "  catnis blaque wright";
+catname.innerHTML = cats
+</script>
+
+<h1 id="sentence">Lorem ipsum, dolor.</h1>
+<script>
+    //var sentenceNode = document.getElementById("sentence")
+    //var sentence = sentenceNode.innerText
+    var uppersentence = sentence.toUpperCase()
+    //console.log("Sentence:", sentence)
+    var firstTenChars = sentence.substr (10)
+   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

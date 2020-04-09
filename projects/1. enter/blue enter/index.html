@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBY TIAL </title>
+    <script src="https://cdn.babylonjs.com/babylon.max.js"></script>
+
+    <style>
+        body{
+            background-color: pink;
+        }
+
+        #canvas {
+            width:80%;
+            height:80vh;
+            z-index:10;
+            border:0;
+            padding:0;
+            margin:0;
+            background-color: transparent;
+        }
+
+        #maya{
+            font-size: 300px;
+            color:white;
+            position: absolute;;
+            background-color: transparent;
+            z-index:-200;
+    
+        }
+        #wright{
+            font-size: 300px;
+            color:white;
+            position: fixed;
+            z-index:1;
+            top:30vh;
+            left:40%;
+            background-color: transparent;
+        }
+        #full{
+            z-index: -9;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="maya">MAYA</h1>
+    <h2 id="wright">WRIGHT</h2>
+<canvas id="canvas"></canvas>
+<script>
+    window.addEventListener('DOMContentLoaded', function(){
+        var canvas = document.getElementById('canvas');
+
+        var engine = new BABYLON.Engine(canvas, true,);
+        engine.enableOfflineSupport = false; // Dont require a manifest file
+        var createScene = function(){
+            var scene = new BABYLON.Scene(engine);
+            scene.clearColor = new BABYLON.Color4(0, 0, 0, 0);
+
+
+            var camera = new BABYLON.ArcRotateCamera("arcCam",
+                    BABYLON.Tools.ToRadians(0),
+                    BABYLON.Tools.ToRadians(0),
+                    7.,BABYLON.Vector3.Zero(),scene);
+            camera.attachControl(canvas,true);
+            var light = new BABYLON.PointLight("PointLight",new BABYLON.Vector3(
+            5,5,5),scene);
+            light.parent = camera;
+            light.intensity = 1000.5;
+
+            BABYLON.SceneLoader.ImportMesh("","","ShippingContainer.babylon",
+            scene,function(newMeshes) {
+                newMeshes.forEach(function(mesh){
+                    mesh.rotation = new BABYLON.Vector3(BABYLON.Tools.ToRadians(
+                    0),0,0);
+                }                );
+            });
+
+            return scene;
+        }
+
+        var scene = createScene();
+        engine.runRenderLoop(function(){
+            scene.render();
+        });
+
+    });
+</script>
+
+<h1 id="full">Maya<br/>Wright</h1>
+
+<style>
+    #canvas{
+        background: transparent;
+    }
+    h1{
+        background-color: transparent;
+        font-size: large;
+        top:5vh;
+        left:40%;
+        position: absolute;
+    }
+ 
+</style>
+
+</body>
+</html>
